@@ -27,8 +27,10 @@ SOCIAL = (('google', 'https://plus.google.com/u/0/+AlexJeffery136'),
 DEFAULT_PAGINATION = 10
 
 # For my favicon
-STATIC_PATHS = [ 'extra/favicon.ico' ]
-EXTRA_PATH_METADATA = { 'extra/favicon.ico': {'path': 'favicon.ico'} }
+STATIC_PATHS = [ 'extra/' ]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.png': {'path': 'favicon.png'}
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
