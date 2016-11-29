@@ -3,6 +3,7 @@ Date: 2016-11-29 14:00
 Tags: about
 Slug: about
 Authors: Alex Jeffery
+Header_Cover: /images/header.jpg
 Summary: About
 
 This is the personal web page of Alex Jeffery, known accross the internet as AlexJ136.

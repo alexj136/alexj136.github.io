@@ -4,12 +4,13 @@ Tags: contact
 Slug: contact
 Authors: Alex Jeffery
 Summary: Contact
+Header_Cover: /images/header.jpg
 
-##### Email:
+If you want to get in touch, you can [email me](mailto:A.P.Jeffery@sussex.ac.uk) at:
 
     A.P.Jeffery@sussex.ac.uk
 
-##### Office Address:
+My office address is:
 
     Chichester 2R306
     Foundations of Software Systems Group

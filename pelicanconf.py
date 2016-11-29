@@ -19,17 +19,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# Social widgets
+SOCIAL = (('google', 'https://plus.google.com/u/0/+AlexJeffery136'),
+          ('github', 'https://github.com/alexj136'),
+          ('envelope', 'mailto:A.P.Jeffery@sussex.ac.uk'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'theme'
+
+# Theme settings - https://github.com/gilsondev/pelican-clean-blog
+HEADER_COVER = 'images/header.jpg'
