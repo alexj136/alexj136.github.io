@@ -1,6 +1,6 @@
 Title: Starting a Blog with Pelican and Arch Linux
 Date: 2016-11-29 12:30
-Category: Tech
+Category: Blog
 Tags: pelican, archlinux, pacman
 Slug: pelican-arch
 Authors: Alex Jeffery

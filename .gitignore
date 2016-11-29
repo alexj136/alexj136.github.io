@@ -1,4 +1,5 @@
 *.pyc
 *.swp
 srv.pid
+pelican.pid
 output/
