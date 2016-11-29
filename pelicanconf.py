@@ -29,6 +29,7 @@ DEFAULT_PAGINATION = 10
 # For my favicon
 STATIC_PATHS = [ 'extra/' ]
 EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.png': {'path': 'favicon.png'}
 }
 
