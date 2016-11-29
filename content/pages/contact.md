@@ -6,16 +6,18 @@ Authors: Alex Jeffery
 Summary: Contact
 Header_Cover: /images/header.jpg
 
-If you want to get in touch, you can [email me](mailto:A.P.Jeffery@sussex.ac.uk) at:
+### Email
 
-    A.P.Jeffery@sussex.ac.uk
+If you want to get in touch, you can email me at `A.P.Jeffery@sussex.ac.uk`.
 
-My office address is:
+### Office address
 
-    Chichester 2R306
-    Foundations of Software Systems Group
-    Department of Informatics
-    University of Sussex
-    Falmer
-    Brighton
-    BN1 9QJ
+I can occasionally be found at the address below. Best email me for an appointment first though.
+
+> Chichester 2R306 <br/>
+> Foundations of Software Systems Group <br/>
+> Department of Informatics <br/>
+> University of Sussex <br/>
+> Falmer <br/>
+> Brighton <br/>
+> BN1 9QJ  <br/>
