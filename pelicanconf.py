@@ -27,7 +27,7 @@ SOCIAL = (('google', 'https://plus.google.com/u/0/+AlexJeffery136'),
 DEFAULT_PAGINATION = 10
 
 # For my favicon
-STATIC_PATHS = [ 'extra/' ]
+STATIC_PATHS = [ 'extra/' , 'images/' ]
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.png': {'path': 'favicon.png'}
