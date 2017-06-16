@@ -1,10 +1,5 @@
-Title: Bluetooth Audio with Arch Linux
-Date: 2016-12-01 14:00
-Category: Blog
-Tags: bluetooth, archlinux, pulseaudio, blueman
-Slug: bluetooth-arch
-Authors: Alex Jeffery
-Summary: Configuring Bluetooth Speakers with Arch Linux
+# Bluetooth Audio with Arch Linux
+_Published on 01.12.2016 at 14:00_
 
 Something I've been meaning to figure out for a while is how to use bluetooth speakers with Arch Linux. After numerous attempts over the last year, today I was finally successful.
 
@@ -17,7 +12,7 @@ If you use Arch linux as a daily driver, then you probably already have pulseaud
 Next install `blueman` and `pulseaudio-bluetooth`:
 
     $ sudo pacman -S blueman pulseaudio-bluetooth
-<br/>
+
 ### Getting things running
 
 First, plug your bluetooth dongle in (if necessary).

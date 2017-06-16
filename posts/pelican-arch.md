@@ -1,10 +1,5 @@
-Title: Starting a Blog with Pelican and Arch Linux
-Date: 2016-11-29 12:30
-Category: Blog
-Tags: pelican, archlinux, pacman, jekyll
-Slug: pelican-arch
-Authors: Alex Jeffery
-Summary: Why (and how) I installed Pelican on Arch Linux instead of Jekyll
+# Starting a Blog with Pelican and Arch Linux
+_Published on 29.11.2016 at 12:30_
 
 I've been thinking for a while about blogging about some of the geeky stuff I do on my computer. Mostly in order to document my technical misadventures for my future reference, with the possibility that they might be useful to someone else out there. Recently I decided to do it, and that I'd use [GitHub Pages](https://pages.github.com/) to host the blog. I'd use some sort of static site generation tool to help me make the content pretty, because there's no way I was going to play around with HTML.
 

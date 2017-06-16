@@ -1,10 +1,5 @@
-Title: Visualising the Collatz Conjecture
-Date: 2016-12-02 00:10
-Category: Blog
-Tags: mathematics, programming, java
-Slug: collatz-graph-drawing
-Authors: Alex Jeffery
-Summary: Drawing Collatz Graphs with Java and Graphviz
+# Visualising the Collatz Conjecture
+_Published on 02.12.2016 at 00:10_
 
 The Collatz conjecture is arguably the easiest to understand unsolved problem in mathematics. It was famously said that "Mathematics may not be ready for such problems" [1], and yet the problem itself can be understood by anyone that understands simple arithmetic.
 
@@ -110,7 +105,7 @@ Where `example.dot` is our graphviz file, we can run this command to generate an
 
 And the following image is generated:
 
-![a]({attach}images/collatz-simple-example.png)
+![a simple collatz graph](images/collatz-simple-example.png)
 
 It's pretty. But we can't make large graphs with graphviz alone, as we'd have to calculate the graph by hand in order to type it into graphviz. So the solution is to write some code to generate our graphviz file.
 

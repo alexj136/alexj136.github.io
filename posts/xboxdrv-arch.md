@@ -1,10 +1,5 @@
-Title: xboxdrv on Arch Linux
-Date: 2016-11-29 17:30
-Category: Blog
-Tags: xboxdrv, archlinux, minecraft
-Slug: xboxdrv-arch
-Authors: Alex Jeffery
-Summary: Configuring Arch Linux to talk to an Xbox 360 controller
+# xboxdrv on Arch Linux
+_Published on 29.11.2016 at 17:30_
 
 Sometimes I'm embarrassed to admit it, but I really like Minecraft. What I don't like, however, is playing it with a laptop keyboard. Among other problems, it requires me to sit closer to the screen than I'd like. So since I had an xbox 360 controller lying around, I decided to see if I could configure it to work with my Arch Linux setup.
 
