@@ -8,6 +8,7 @@ all: \
 	target/pelican-arch.html \
 	target/xboxdrv-arch.html \
 	target/bluetooth-arch.html \
+	target/mixing-monads.html \
 	target/collatz.html
 
 target/%.html: pages/%.md template target
