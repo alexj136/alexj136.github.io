@@ -5,6 +5,7 @@ all: \
 	target/index.html \
 	target/about.html \
 	target/contact.html \
+	target/photos.html \
 	target/pelican-arch.html \
 	target/xboxdrv-arch.html \
 	target/bluetooth-arch.html \
