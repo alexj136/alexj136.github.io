@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Remove the target directory and quit if we got "clean" as the argument,
+# otherwise do the build.
+if [ $@ == "clean" ]; then
+    rm -rf target/
+    exit $?
+fi
+
+# Clone the site repository if it's not there
+if [ ! -d target ]; then
+	git clone https://github.com/alexj136/alexj136.github.io target/
+fi
+
+# Pull down the stylesheet if it's not there
+if [ ! -f target/style.css ]; then
+	curl -o target/style.css https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css
+fi
+
+# Build the pages
+for page in pages/*.md; do
+    infile="${page##*/}"
+    outfile="target/${infile%.md}.html"
+    cat template/preamble.html > $outfile
+	markdown $page >> $outfile
+    cat template/postamble.html >> $outfile
+done
+
+# Build the posts
+for post in posts/*.md; do
+    infile="${post##*/}"
+    outfile="target/${infile%.md}.html"
+	cat template/preamble.html > $outfile
+	markdown template/post_header.md >> $outfile
+	markdown $post >> $outfile
+	cat template/postamble.html >> $outfile
+done
+
+# Copy the images directory
+cp -ru images target/
+
+# Copy the extras
+for file in extra/*; do
+    cp -ru $file target/
+done
