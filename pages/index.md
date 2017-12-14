@@ -21,3 +21,7 @@ Configuring Arch Linux to talk to an Xbox 360 controller
 #### [Starting a Blog with Pelican and Arch Linux](pelican-arch.html)
 Why (and how) I installed Pelican on Arch Linux instead of Jekyll
 <br/>_29.11.2016, 12:30_
+
+#### [Changing the default desktop on Ubuntu 16.04](default-desktop-ubuntu.html)
+Solving login problems with Ubuntu 16.04
+<br/>_14.12.2017, 12:00_

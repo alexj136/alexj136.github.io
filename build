@@ -2,7 +2,7 @@
 
 # Remove the target directory and quit if we got "clean" as the argument,
 # otherwise do the build.
-if [ $@ == "clean" ]; then
+if [ "$@" == "clean" ]; then
     rm -rf target/
     exit $?
 fi
