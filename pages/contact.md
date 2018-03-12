@@ -1,14 +1,4 @@
-**Alex Jeffery** &emsp; &#9679; &emsp; [Home](index.html) &emsp; &#9679; &emsp; [About](about.html) &emsp; &#9679; &emsp; [Contact](contact.html) &emsp; &#9679; &emsp; [Photos](photos.html)
-
 # Contact
-
-### Twitter
-
-My Twitter handle is `@alexj136`.
-
-### Github
-
-My Github username is `alexj136`.
 
 ### Email
 
@@ -26,4 +16,8 @@ I can occasionally be found at the address below. Best email me for an appointme
 > Brighton <br/>
 > BN1 9QJ  <br/>
 
-_Last updated 29.11.2016 14:00_
+### Github
+
+My Github username is `alexj136`.
+
+_Last updated 12.03.2018 09:00_

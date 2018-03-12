@@ -1,27 +1,9 @@
-**Alex Jeffery** &emsp; &#9679; &emsp; [Home](index.html) &emsp; &#9679; &emsp; [About](about.html) &emsp; &#9679; &emsp; [Contact](contact.html) &emsp; &#9679; &emsp; [Photos](photos.html)
-
 # Alex Jeffery's personal webpage and blog
 
-### Blog Posts
+### About
 
-<!--
-### [Visualising the Collatz Conjecture](posts/collatz.html)
-Drawing Collatz Graphs with Java and Graphviz
-<br/>_02.12.2016, 00:10_
--->
+I'm a PhD student at the University of Sussex. My research interests include JIT compilation, functional programming, concurrency theory and type systems. At present my research aims to develop type systems and optimisation techniques for concurrent programming languages. My supervisor is [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
 
-#### [Bluetooth Audio with Arch Linux](bluetooth-arch.html)
-Configuring Bluetooth Speakers with Arch Linux
-<br/>_01.12.2016, 14:00_
+Outside of research, I'm interested in computing, photography, science, history, theology, games (board and video), vexillology, Rubik's cubes and many other things besides.
 
-#### [xboxdrv on Arch Linux](xboxdrv-arch.html)
-Configuring Arch Linux to talk to an Xbox 360 controller
-<br/>_29.11.2016, 17:30_
-
-#### [Starting a Blog with Pelican and Arch Linux](pelican-arch.html)
-Why (and how) I installed Pelican on Arch Linux instead of Jekyll
-<br/>_29.11.2016, 12:30_
-
-#### [Changing the default desktop on Ubuntu 16.04](default-desktop-ubuntu.html)
-Solving login problems with Ubuntu 16.04
-<br/>_14.12.2017, 12:00_
+_Last updated 12.03.2018 09:00_
