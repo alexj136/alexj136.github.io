@@ -10,24 +10,14 @@ if [ ! -f target/style.css ]; then
 	curl -o target/style.css https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css
 fi
 
-# Build the pages
-for page in pages/*.md; do
+# Build the content
+for page in pages/*.md posts/*.md; do
     infile="${page##*/}"
     outfile="target/${infile%.md}.html"
     cat template/preamble.html > $outfile
-	markdown template/post_header.md >> $outfile
+	markdown template/header.md >> $outfile
 	markdown $page >> $outfile
     cat template/postamble.html >> $outfile
-done
-
-# Build the posts
-for post in posts/*.md; do
-    infile="${post##*/}"
-    outfile="target/${infile%.md}.html"
-	cat template/preamble.html > $outfile
-	markdown template/post_header.md >> $outfile
-	markdown $post >> $outfile
-	cat template/postamble.html >> $outfile
 done
 
 # Copy the images directory

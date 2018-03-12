@@ -1,4 +1,8 @@
-# Blog Posts
+# Blog
+
+I blog here about Linux and programming, but I reserve the right to get philosophical and/or political in the future.
+
+### Posts
 
 <!--
 ### [Visualising the Collatz Conjecture](posts/collatz.html)
