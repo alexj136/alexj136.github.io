@@ -1,6 +1,6 @@
 ---
 <center>
-<img src="/home/a/ap/apj21/Downloads/face.jpg" alt="Avatar width="240" height="240" style="border-radius: 50%"/>
+<img src="images/face.jpg" alt="Avatar" width="240" height="240" style="border-radius: 50%"/>
 
 <b><font size="38">Alex Jeffery</font></b></center>
 
