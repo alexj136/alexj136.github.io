@@ -2,7 +2,7 @@
 
 ### Email
 
-If you want to get in touch, you can email me at `A.P.Jeffery@sussex.REMOVE.ac.uk`.
+If you want to get in touch, you can email me at ![](images/em.png).
 
 ### Office address
 
