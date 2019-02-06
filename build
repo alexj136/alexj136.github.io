@@ -2,7 +2,7 @@
 
 # Clone the site repository if it's not there
 if [ ! -d target ]; then
-	git clone https://github.com/alexj136/alexj136.github.io target/
+	git clone git+ssh://git@github.com/alexj136/alexj136.github.io.git target/
 fi
 
 # Pull down the stylesheet if it's not there
