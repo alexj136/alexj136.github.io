@@ -8,10 +8,10 @@
 
 ### About
 
-I'm a software developer, and also finishing up my PhD at the University of Sussex. I enjoy programming, and especially enjoy projects related to programming languages. But I'll get stuck into anything that's interesting.
+I'm currently a software developer at [Compilerworks](http://www.compilerworks.com). I enjoy programming, and especially enjoy projects related to compilers and programming languages. But I'll get stuck into anything that's interesting.
 
-My research interests during my PhD have included JIT compilation, functional programming, Scala's implicit constructs, concurrency theory and type systems, especially session types. At present my research aims to develop type systems and optimisation techniques for concurrent programming languages. My supervisor is [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
+In 2019 I finished my PhD at the University of Sussex. My research interests during my PhD included JIT compilation, functional programming, Scala's implicit constructs, concurrency theory and type systems, especially session types. My research aimed to develop type systems and optimisation techniques for concurrent programming languages. My supervisor was [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
 
-Outside of research, I'm interested in computing, maths, photography, science, history, theology, games (board and video), vexillology, Rubik's cubes, fountain pens and many other things besides.
+Outside of work, I'm interested in computing, maths, photography, science, history, theology, games (board and video), vexillology, Rubik's cubes, fountain pens and many other things besides.
 
-_Last updated 30.08.2019 12:30_
+_Last updated 03.01.2020 12:30_
