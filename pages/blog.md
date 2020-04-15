@@ -4,11 +4,9 @@ I blog here about Linux and programming, but I reserve the right to get philosop
 
 ### Posts
 
-<!--
-### [Visualising the Collatz Conjecture](posts/collatz.html)
-Drawing Collatz Graphs with Java and Graphviz
-<br/>_02.12.2016, 00:10_
--->
+#### [Simple yet mistifying mathematics: the Collatz Conjecture](collatz.html)
+Some really simple, yet really interesting, mathematics
+<br/>_15th April 2020_
 
 #### [Changing the default desktop on Ubuntu 16.04](default-desktop-ubuntu.html)
 Solving login problems with Ubuntu 16.04

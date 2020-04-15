@@ -1,113 +1,111 @@
-# Visualising the Collatz Conjecture
-_Published on 02.12.2016 at 00:10_
+# Simple yet mistifying mathematics: the Collatz Conjecture
+_15th April 2020_
 
-The Collatz conjecture is arguably the easiest to understand unsolved problem in mathematics. It was famously said that "Mathematics may not be ready for such problems" [1], and yet the problem itself can be understood by anyone that understands simple arithmetic.
+The Collatz conjecture is arguably the easiest to understand unsolved problem in
+mathematics. It was famously said that ["Mathematics may not be ready for such
+problems"](https://en.wikipedia.org/wiki/Collatz_conjecture), and yet the
+problem itself can be understood by anyone that understands simple arithmetic.
 
-### Understanding the problem
+### The problem
 
-We start by picking any whole number. In our example, we'll start with 17. We then apply the following rule: *If our number is even, divide it by 2. If it's odd, multiply it by 3 and then add 1*. Thus from 7 (an odd number) we reach 52, because (17 * 3) + 1 = 52.
+We start by picking any whole number. Here we'll start with 17, but could pick
+any number. We then generate a new number by applying the following simple
+rules:
+ - *If our number is even, divide it by 2.*
+ - *If it's odd, multiply it by 3 and then add 1*.
 
-    17 ─┤ 52
+So, starting from 17 (an odd number) we reach 52, because we multiply it by 3 as
+the rule says, giving 51, and then we add 1, giving 52. So 52 is our new number,
+and we apply that same rule to it - it's even, so we divide by 2, giving 26.
 
-52 is even, so we divide by 2 to get 26.
+Our rules have made this sequence:
 
-    17 ─┤ 52 ─┤ 26
+    17 ▷ 52 ▷ 26
 
-26 is even, so again we divide by 2 to get 13.
+After applying the rules a few more times, we end up with this chain, which
+ends in 1:
 
-    17 ─┤ 52 ─┤ 26 ─┤ 13
+    17 ▷ 52 ▷ 26 ▷ 13 ▷ 40 ▷ 20 ▷ 10 ▷ 5 ▷ 16 ▷ 8 ▷ 4 ▷ 2 ▷ 1 
 
-13 is odd, so we divide by 3 and add 1 again, yielding 40:
+Now something interesting happens. From 1, we go to 4, as 1 is odd and (3 x 1) +
+1 = 4.
 
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40
+    ... ▷ 1 ▷ 4
 
-After doing this a few more times, we end up with this chain, ending in 1:
+Then, because 4 is even, we divide by 2 and get 2 as our next number:
 
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┐
-                                                 │
-           ┌─────────────────────────────────────┘
-           ┴
-           16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
+    ... ▷ 1 ▷ 4 ▷ 2
 
-Now something interesting happens. From 1, we go to 4:
+And 2 is even, so we divide it by 2 and get 1:
 
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┐
-                                                 │
-           ┌─────────────────────────────────────┘
-           ┴
-           16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1 ─┤ 4
+    ... ▷ 1 ▷ 4 ▷ 2 ▷ 1
 
-And from 4, we return to 2, and then to 1, and then to 4 again, forming a repeating pattern:
+And we keep going:
 
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┐
-                                                 │
-           ┌─────────────────────────────────────┘
-           ┴
-           16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1 ─┤ 4 ─┤ 2 ─┤ 1 ─┤ 4 ─┤ 2 ─┤ 1 ─┤ 4 ─┤ ...
+    ... ▷ 1 ▷ 4 ▷ 2 ▷ 1 ▷ 4 ▷ 2 ▷ 1 ▷ 4 ▷ 2 ▷ 1 ▷ ...
 
-Instead of drawing this as a chain, we can draw it as a graph, with a loop from 1 back to 4:
+We're stuck in a loop! The rules force us into this loop of 4 to 2 to 1, and
+back to 4 again. We can draw this as a chain:
 
-                                                              ┌─────────┐
-                                                              ┴         │
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┤ 16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
 
-This graph above is what we call the *collatz graph* for 17. We can draw a collatz graph for any whole number. Here is the collatz graph for 6:
+    17 ▷ 52 ▷ 26 ▷ 13 ▷ 40 ▷ 20 ▷ 10 ▷ 5 ▷ 16 ▷ 8 ▷ 4 ▷ 2 ▷ 1
+                                                    └───◁───┘
 
-                                    ┌─────────┐
-                                    ┴         │
-    6 ─┤ 3 ─┤ 10 ─┤ 5 ─┤ 16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
+Going back to our rules, let's try again, starting from 6. It's even - divide
+by two - we get 3. Carry on that chain a few steps, and you'll see it also gets
+to 4, then 2, then 1, and gets stuck in the same loop:
 
-and for 20:
+    6 ▷ 3 ▷ 10 ▷ 5 ▷ 16 ▷ 8 ▷ 4 ▷ 2 ▷ 1
+                              └───◁───┘
 
-                                ┌─────────┐
-                                ┴         │
-    20 ─┤ 10 ─┤ 5 ─┤ 16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
 
-So far all our graphs have ended at 1. But here's a question: will the graph *always* end at 1, for every starting number? We do not know. And we can't just try every number, because there are infinitely many of them. This is the collatz conjecture: **Do all chains eventually lead to 1, regardless of the starting number?** We've tried lots of numbers. In fact, we've tried over 2<sup>60</sup> numbers, and so far they've all ended in 1. But no one has *proved* that all numbers end in 1. It's an open question. And it's likely we won't know the answer for a long time.
+And if we start a sequence at 35:
 
-Most experts think that all numbers do eventually get down to 1, but there is also a possiblity that there is another cycle like the 1-2-4 cycle amongst the very large numbers. Numbers in such a cycle would never reach 1.
+    35 ▷ 106 ▷ 53 ▷ 160 ▷ 80 ▷ 40 ▷ 20 ▷ 10 ▷ 5 ▷ 16 ▷ 8 ▷ 4 ▷ 2 ▷ 1
+                                                           └───◁───┘
 
-### Connecting graphs
+So it seems like all the starting numbers we try will end in the 4-2-1 loop.
+Indeed, **every starting number everyone has ever tried** ends in 4-2-1. Some
+clever people have written computer programs that check every number, and those
+programs have tried with extraordinarily large numbers, and all the chains end
+in 4-2-1.
 
-You may have noticed that some numbers have common numbers in their graphs. This means that we can combine graphs together into trees. For example,  the graphs for 17 and 6 both contain 10, so we can 'splice them' at 10:
+It turns out that **for all our mighty human acheivements - putting men on the
+moon and inventing computers that send information around the world in less
+than a second - nobody understands why all the numbers we try end in the 4-2-1
+loop**. And some of the smartest people to ever live have tried to understand,
+without success.
 
-                                6 ─┤ 3 ─┐                     ┌─────────┐
-                                        ┴                     ┴         │
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┤ 16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
+The *Collatz Conjecture* is this unanswered question - do all chains eventually
+end up at 4-2-1?
 
-And here is the same tree spliced with the graph for 106:
+This is one of the reasons mathematics is so beautiful to me - we just play a
+simple little number game that a clever 5 year-old can play, and suddenly we
+find ourselves at a challenge that is apparently beyond the best and brightest
+mathematicians to ever live.
 
-                                6 ─┤ 3 ─┐                     ┌─────────┐
-                                        ┴                     ┴         │
-    17 ─┤ 52 ─┤ 26 ─┤ 13 ─┤ 40 ─┤ 20 ─┤ 10 ─┤ 5 ─┤ 16 ─┤ 8 ─┤ 4 ─┤ 2 ─┤ 1
-                            ┬
-    106 ─┤ 53 ─┤ 160 ─┤ 80 ─┘
+### Connecting chains
 
-### Having some fun
+Going back to our chains, some of the chains we wrote down had parts in common.
+We can combine the common parts of the chain to create a funny looking network:
 
-We can write a program to generate these graphs for us! Graphviz is a piece of software for generating image files from graphs. Here's a simple graphviz file that will generate the collatz graph for 5:
 
-    digraph G {
-        rankdir=LR
-        5 -> 16;
-        16 -> 8;
-        8 -> 4;
-        4 -> 2;
-        2 -> 1;
-        1 -> 4;
-    }
+    35 ▷ 106 ▷ 53 ▷ 160 ▷ 80 ─▷┐
+           17 ▷ 52 ▷ 26 ▷ 13 ▷ 40 ▷ 20 ▷ 10 ▷ 5 ▷ 16 ▷ 8 ▷ 4 ▷ 2 ▷ 1
+                                 6 ▷ 3 ─▷┘                 └───◁───┘
 
-The second line `rankdir=LR` just tells graphviz to draw the graph horizontally rather than vertically so that it looks nice on this webpage. Otherwise the code should be fairly intuitive. We just write down which numbers have an edge to which numbers.
+I wrote a computer program that can draw these networks. If you're into
+programming, you can look at my code
+[here](https://github.com/alexj136/collatz). It generated this image, which shows
+the chain including every number up to 26. I think it's pretty. Note that it
+includes some numbers greater than 26, because the rules sometimes generate
+them - you can see how that happens when we start from 18, 25 or 15.
 
-Where `example.dot` is our graphviz file, we can run this command to generate an image file `example.png`:
+![a simple collatz graph](images/collatz-26.png)
 
-    $ dot -Tpng example.dot -o example.png
+To see the (very cool looking) graph for **all numbers up to 1000**, click
+[**here**](images/collatz-1000.png).
 
-And the following image is generated:
-
-![a simple collatz graph](images/collatz-simple-example.png)
-
-It's pretty. But we can't make large graphs with graphviz alone, as we'd have to calculate the graph by hand in order to type it into graphviz. So the solution is to write some code to generate our graphviz file.
 
 #### References
 
