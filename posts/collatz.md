@@ -104,7 +104,8 @@ them - you can see how that happens when we start from 18, 25 or 15.
 ![a simple collatz graph](images/collatz-26.png)
 
 To see the (very cool looking) graph for **all numbers up to 1000**, click
-[**here**](images/collatz-1000.png).
+[**here**](images/collatz-1000.png). The file is quite large and may load
+slowly, so be patient.
 
 
 #### References
