@@ -5,7 +5,7 @@ I blog here about Linux and programming, but I reserve the right to get philosop
 ### Posts
 
 #### [Simple yet mistifying mathematics: the Collatz Conjecture](collatz.html)
-Some really simple, yet really interesting, mathematics
+The simplest unsolved problem in mathematics
 <br/>_15th April 2020_
 
 #### [Changing the default desktop on Ubuntu 16.04](default-desktop-ubuntu.html)
