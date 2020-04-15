@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # Clone the site repository if it's not there
 if [ ! -d target ]; then
@@ -7,7 +7,7 @@ fi
 
 # Pull down the stylesheet if it's not there
 if [ ! -f target/style.css ]; then
-	curl -o target/style.css https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css
+    curl -o target/style.css https://raw.githubusercontent.com/sindresorhus/github-markdown-css/1485dd78f5e744ef36e946e5ae44838e3906f9d8/github-markdown.css
 fi
 
 # Build the content
