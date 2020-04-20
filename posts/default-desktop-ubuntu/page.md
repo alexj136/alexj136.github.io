@@ -1,6 +1,3 @@
-# Changing the default desktop on Ubuntu 16.04
-_Published on 14.12.2017 at 12:00_
-
 In my office at university, I have a desktop machine managed by the IT department, that runs a customised version of Ubuntu 16.04. I have sudo and can install whatever packages I like, but not necessarily without causing problems with the customisations made by IT.
 
 A while back I decided to install i3 instead of using the default desktop, Unity. This worked nicely for a while, and I eventually decided to switch back to Unity. I uninstalled i3 and the other packages I used alongside it. Then I tried to log into my user account on the lightdm login screen, and was greeted by a scary message, saying '_Failed to execute login command_'.

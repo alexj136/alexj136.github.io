@@ -1,6 +1,3 @@
-# Bluetooth Audio with Arch Linux
-_Published on 01.12.2016 at 14:00_
-
 Something I've been meaning to figure out for a while is how to use bluetooth speakers with Arch Linux. After numerous attempts over the last year, today I was finally successful.
 
 My laptop doesn't have bluetooth built in, so I bought a cheap USB dongle from Amazon. The reviews said it worked with a raspberry pi so I figured it'd be fine under Arch.

@@ -1,6 +1,3 @@
-# xboxdrv on Arch Linux
-_Published on 29.11.2016 at 17:30_
-
 Sometimes I'm embarrassed to admit it, but I really like Minecraft. What I don't like, however, is playing it with a laptop keyboard. Among other problems, it requires me to sit closer to the screen than I'd like. So since I had an xbox 360 controller lying around, I decided to see if I could configure it to work with my Arch Linux setup.
 
 A quick google search revealed that there is a fairly mature Linux driver for the xbox 360 controller called xboxdrv. It supports some other controllers as well. It can be installed on Arch Linux via an AUR package.

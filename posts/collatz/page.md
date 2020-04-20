@@ -1,6 +1,3 @@
-# Simple yet mistifying mathematics: the Collatz Conjecture
-_15th April 2020_
-
 The Collatz conjecture is arguably the easiest to understand unsolved problem in
 mathematics. It was famously said that ["Mathematics may not be ready for such
 problems"](https://en.wikipedia.org/wiki/Collatz_conjecture), and yet the

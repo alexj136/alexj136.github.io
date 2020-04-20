@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -xe
 
 # Clone the site repository if it's not there
 if [ ! -d target ]; then
@@ -11,13 +11,32 @@ if [ ! -f target/style.css ]; then
 fi
 
 # Build the content
-for page in pages/*.md posts/*.md; do
+for page in pages/*.md; do
     infile="${page##*/}"
     outfile="target/${infile%.md}.html"
-    cat template/preamble.html > $outfile
-	markdown template/header.md >> $outfile
-	markdown $page >> $outfile
-    cat template/postamble.html >> $outfile
+    cat template/preamble.html                  >  $outfile
+    echo "        <title>Alex Jeffery</title>"  >> $outfile
+    cat template/preamble-end.html              >> $outfile
+	markdown template/header.md                 >> $outfile
+	markdown $page                              >> $outfile
+    cat template/postamble.html                 >> $outfile
+done
+
+for post in posts/*; do
+    outfile="target/${post##*/}.html"
+    cat template/preamble.html                                       >  $outfile
+    source "$post/meta.bash"
+    echo "        <title>$title</title>"                             >> $outfile
+    echo "        <meta name=\"description\" content=\"$subtitle\">" >> $outfile
+    echo "        <meta name=\"date\"        content=\"$date\">"     >> $outfile
+    echo "        <meta name=\"keywords\"    content=\"$keywords\">" >> $outfile
+    cat template/preamble-end.html                                   >> $outfile
+	markdown template/header.md                                      >> $outfile
+    echo "<h1>$title</h1>"                                           >> $outfile
+    echo "<p><strong>$subtitle</strong></p>"                         >> $outfile
+    echo "<p><em>$date</em></p>"                                     >> $outfile
+	markdown $post/page.md                                           >> $outfile
+    cat template/postamble.html                                      >> $outfile
 done
 
 # Copy the images directory

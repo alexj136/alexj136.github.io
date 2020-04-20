@@ -1,6 +1,3 @@
-# Starting a Blog with Pelican and Arch Linux
-_Published on 29.11.2016 at 12:30_
-
 I've been thinking for a while about blogging about some of the geeky stuff I do on my computer. Mostly in order to document my technical misadventures for my future reference, with the possibility that they might be useful to someone else out there. Recently I decided to do it, and that I'd use [GitHub Pages](https://pages.github.com/) to host the blog. I'd use some sort of static site generation tool to help me make the content pretty, because there's no way I was going to play around with HTML.
 
 There are a lot of static site generation tools out there, the most popular and best documented of which is [Jekyll](https://jekyllrb.com/). Normally the fact that it's well documented would be enough to sway me to use it, but it has a big disadvantage that made me look elsewhere: It's not in the repos for Arch Linux (my Linux of choice). 

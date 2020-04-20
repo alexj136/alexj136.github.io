@@ -1,6 +1,4 @@
-# So you want to mix monads?
 <!-- began work on this on 06.07.2017 -->
-_Published on TODO at TODO_
 
 You're a Haskell programmer. And not a terrible one. You know the basics. You've
 been `map`ping and `foldl`ing for quite some time now, and you love it. You can
