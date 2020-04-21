@@ -11,32 +11,79 @@ if [ ! -f target/style.css ]; then
 fi
 
 # Build the content
-for page in pages/*.md; do
-    infile="${page##*/}"
-    outfile="target/${infile%.md}.html"
-    cat template/preamble.html                  >  $outfile
-    echo "        <title>Alex Jeffery</title>"  >> $outfile
-    cat template/preamble-end.html              >> $outfile
-	markdown template/header.md                 >> $outfile
-	markdown $page                              >> $outfile
-    cat template/postamble.html                 >> $outfile
+for page in pages/*; do
+    outfile="target/${page##*/}.html"
+    source "$page/meta.bash"
+    echo "
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\" />
+        <style>
+            .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 45px;
+            }
+            @media (max-width: 767px) {
+                .markdown-body {
+                    padding: 15px;
+                }
+            }
+        </style>
+        <title>$title — Alex Jeffery</title>
+        <meta name=\"date\" content=\"$date\">
+        <meta name=\"keywords\" content=\"$keywords\">
+    </head>
+    <article class=\"markdown-body\">
+	$(markdown template/header.md)
+    <h1>$title</h1>
+	$(markdown $page/page.md)
+    <p><em>Updated $date</em></p>
+    </article>
+</html>" > $outfile
 done
 
 for post in posts/*; do
     outfile="target/${post##*/}.html"
-    cat template/preamble.html                                       >  $outfile
     source "$post/meta.bash"
-    echo "        <title>$title</title>"                             >> $outfile
-    echo "        <meta name=\"description\" content=\"$subtitle\">" >> $outfile
-    echo "        <meta name=\"date\"        content=\"$date\">"     >> $outfile
-    echo "        <meta name=\"keywords\"    content=\"$keywords\">" >> $outfile
-    cat template/preamble-end.html                                   >> $outfile
-	markdown template/header.md                                      >> $outfile
-    echo "<h1>$title</h1>"                                           >> $outfile
-    echo "<p><strong>$subtitle</strong></p>"                         >> $outfile
-    echo "<p><em>$date</em></p>"                                     >> $outfile
-	markdown $post/page.md                                           >> $outfile
-    cat template/postamble.html                                      >> $outfile
+    echo "
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\" />
+        <style>
+            .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 45px;
+            }
+            @media (max-width: 767px) {
+                .markdown-body {
+                    padding: 15px;
+                }
+            }
+        </style>
+        <title>$title — Alex Jeffery</title>
+        <meta name=\"description\" content=\"$subtitle\">
+        <meta name=\"date\" content=\"$date\">
+        <meta name=\"keywords\" content=\"$keywords\">
+    </head>
+    <article class=\"markdown-body\">
+    $(markdown template/header.md)
+    <h1>$title</h1>
+    <p><strong>$subtitle</strong></p>
+    <p><em>$date</em></p>
+    $(markdown $post/page.md)
+    </article>
+</html>" > $outfile
+    unset title subtitle date keywords todo
 done
 
 # Copy the images directory
