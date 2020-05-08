@@ -2,7 +2,7 @@
 title:               Alex Jeffery
 tagline:             ''
 description:         'The online profile and blog of Alex Jeffery.'
-url:                 alexjeffery.net
+url:                 https://alexjeffery.net
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,7 +10,7 @@ permalink:           pretty
 # About/contact
 author:
   name:              Alex Jeffery
-  url:               alexjeffery.net
+  url:               https://alexjeffery.net
 
 include:
   - images
