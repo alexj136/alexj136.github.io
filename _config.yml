@@ -3,7 +3,7 @@ title:               Alex Jeffery
 tagline:             ''
 description:         'The online profile and blog of Alex Jeffery.'
 url:                 'https://github.com/alexj136/alexj136.github.io'
-baseurl:             'https://alexjeffery.net'
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 
