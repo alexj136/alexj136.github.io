@@ -24,3 +24,9 @@ Then compile with
 Serve locally with 
 
     jekyll serve
+
+### TODOs
+
+- Make an apple icon (see `public/apple-touch-icon-precompressed.png` and
+  `_includes/head.html`).
+- Make code blocks scroll horizontally rather than wrap.
