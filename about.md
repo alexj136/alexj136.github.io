@@ -1,29 +1,26 @@
 ---
 layout: page
 title: About
+date: 14th April 2020
+tags: alex, jeffery, website, homepage
 ---
 
+<center>
+<img src="images/face.jpg" alt="Avatar" width="240" height="240" style="border-radius: 50%"/>
+</center>
+
+---
+
+### About
+
+Hi, I'm Alex Jeffery, this is my web site. I'm a software developer at [CompilerWorks](http://www.compilerworks.com). I enjoy programming, and especially enjoy projects related to compilers and programming languages. But I'll get stuck into anything that's interesting.
+
+In 2019 I finished my PhD at the University of Sussex. My PhD focused on JIT compilation, functional programming, Scala's implicit constructs, concurrency theory and type systems, especially session types. My research aimed to develop type systems and optimisation techniques for concurrent programming languages. My supervisor was [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
+
+Outside of work, I'm interested in computing, maths, photography, science, history, theology, games (board and video), vexillology, Rubik's cubes, fountain pens and many other things besides.
+
+<!--
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
-
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+-->
