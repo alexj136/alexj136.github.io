@@ -1,9 +1,9 @@
 # Setup
 title:               Alex Jeffery
-tagline:             'Software engineer, doctor of Computer Science'
+tagline:             ''
 description:         'The online profile and blog of Alex Jeffery.'
-url:                 https://github.com/alexj136/alexj136.github.io
-baseurl:             ''
+url:                 'https://github.com/alexj136/alexj136.github.io'
+baseurl:             'https://alexjeffery.net'
 paginate:            5
 permalink:           pretty
 
@@ -11,7 +11,6 @@ permalink:           pretty
 author:
   name:              Alex Jeffery
   url:               https://alexjeffery.net
-  email:             apjeffery136@gmail.com
 
 include:
   - images

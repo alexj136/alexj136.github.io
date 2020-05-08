@@ -1,4 +1,5 @@
 ---
+layout: post
 title: So you want to mix monads?
 subtitle: TODO
 date: 6th July 2017

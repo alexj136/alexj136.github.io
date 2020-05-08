@@ -2,6 +2,7 @@
 layout: post
 title: Bluetooth audio with Arch Linux
 subtitle: Configuring Bluetooth Speakers with Arch Linux
+date: 1st December 2016
 tags: bluetooth, speakers, headphones, arch, linux, blueman, pulseaudio
 ---
 
