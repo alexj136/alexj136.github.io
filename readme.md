@@ -16,3 +16,11 @@ Ensure the following is in `.bashrc` or equivalent:
 Run
 
     gem install jekyll bundler jekyll-sitemap jekyll-paginate jekyll-feed
+
+Then compile with
+
+    jekyll build
+
+Serve locally with 
+
+    jekyll serve
