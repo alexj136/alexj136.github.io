@@ -13,6 +13,9 @@ author:
   url:               https://alexjeffery.net
   email:             apjeffery136@gmail.com
 
+include:
+  - images
+
 # Gems
 plugins:
   - jekyll-paginate
