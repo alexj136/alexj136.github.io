@@ -29,4 +29,4 @@ Serve locally with
 
 - Make an apple icon (see `public/apple-touch-icon-precompressed.png` and
   `_includes/head.html`).
-- Make code blocks scroll horizontally rather than wrap.
+- Fix image links and code block alignment on the collatz blog.
