@@ -1,7 +1,6 @@
 # Setup
 title:               Alex Jeffery
-tagline:             ''
-description:         'The online profile and blog of Alex Jeffery.'
+tagline:             'The online profile and blog of Alex Jeffery.'
 url:                 https://alexjeffery.net
 baseurl:             ''
 paginate:            5
