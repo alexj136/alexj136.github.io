@@ -6,11 +6,6 @@ baseurl:             ''
 paginate:            5
 permalink:           pretty
 
-# About/contact
-author:
-  name:              Alex Jeffery
-  url:               https://alexjeffery.net
-
 include:
   - images
 
