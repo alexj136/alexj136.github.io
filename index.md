@@ -17,6 +17,15 @@ In 2019 I finished my PhD at the University of Sussex. My PhD focused on JIT com
 
 Outside of work, I'm interested in computing, maths, photography, science, history, theology, games (board and video), vexillology, Rubik's cubes, fountain pens and many other things besides.
 
+<!-- Email hidden in javascript - spam bots need to run it
+<p id="demo"/>
+<script type="text/javascript">
+    document.getElementById("demo").innerHTML =
+            ("moc.liamg" + String.fromCharCode(64) + "631yreffejpa")
+            .split("").reverse().join("");
+</script>
+-->
+
 <!--
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
