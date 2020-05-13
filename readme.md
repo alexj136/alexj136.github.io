@@ -27,6 +27,5 @@ Serve locally with
 
 ### TODOs
 
-- Make an apple icon (see `public/apple-touch-icon-precompressed.png` and
-  `_includes/head.html`).
-- Fix image links and code block alignment on the collatz blog.
+- Find a good solution for the email address - captcha?
+- Publications page - improve it, include abstracts
