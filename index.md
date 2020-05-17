@@ -4,7 +4,7 @@ title: Home
 ---
 
 <center>
-<img src="../images/face.jpg" alt="Avatar" width="240" height="240" style="border-radius: 50%"/>
+<img src="/images/face.jpg" alt="Avatar" width="240" height="240" style="border-radius: 50%"/>
 </center>
 
 ---

@@ -5,6 +5,8 @@ date: 14th April 2020
 tags: alex, jeffery, research, publications, papers, bibliography
 ---
 
+These are the academic research papers I published during my PhD.
+
 ---
 
 ## _On Implicit Program Constructs_
