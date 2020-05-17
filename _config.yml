@@ -5,6 +5,8 @@ url:                 https://alexjeffery.net
 baseurl:             ''
 paginate:            5
 permalink:           pretty
+linkedin:            https://www.linkedin.com/in/alex-jeffery/
+github:              https://github.com/alexj136/
 
 include:
   - images
