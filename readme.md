@@ -25,7 +25,3 @@ Serve locally with
 
     jekyll serve
 
-### TODOs
-
-- Find a good solution for the email address - captcha?
-- Publications page - improve it, include abstracts
