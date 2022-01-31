@@ -11,7 +11,7 @@ title: Home
 
 ### About
 
-I'm a software developer Google, working on a SQL-to-SQL compiler for automatic migration of legacy dialects (Oracle, Teradata etc.) to BigQuery. I was previously working as a developer at [CompilerWorks](http://www.compilerworks.com). I enjoy programming, and especially enjoy projects related to compilers and programming languages. But I'll get stuck into anything that's interesting.
+I'm a software developer at Google, working on a SQL-to-SQL compiler for automatic migration of legacy dialects (Oracle, Teradata etc.) to BigQuery. I was previously working as a developer at [CompilerWorks](http://www.compilerworks.com). I enjoy programming, and especially enjoy projects related to compilers and programming languages. But I'll get stuck into anything that's interesting.
 
 In 2019 I finished my PhD at the University of Sussex. My research focused on JIT compilation, functional programming, Scala's implicit constructs, concurrency theory and type systems, especially session types. My research aimed to develop type systems and optimisation techniques for concurrent programming languages. My supervisor was [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
 
