@@ -15,7 +15,7 @@ I'm a software developer and compiler/programming language nerd. I'm currently w
 
 In 2019 I finished my PhD at the University of Sussex. My research focused on JIT compilation, functional programming, Scala's implicit constructs, concurrency theory and type systems, especially session types. My research aimed to develop type systems and optimisation techniques for concurrent programming languages. My supervisor was [Dr Martin Berger](http://users.sussex.ac.uk/~mfb21/).
 
-Outside of my work in computing, I'm interested in maths, photography, history, theology, board games, and many other things besides.
+Outside of my work in computing, I'm interested in folk music, history, theology, board games, and many other things besides.
 
 <!-- Email hidden in javascript - spam bots need to run it
 <p id="demo"/>
