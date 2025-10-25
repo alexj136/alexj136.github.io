@@ -70,8 +70,7 @@ extended with implicit functions.
 </p>
 </details>
 
-Links: [University of Sussex](http://sro.sussex.ac.uk/id/eprint/88307/1/Jeffery%2C%20Alexander%20Paul.pdf),
-[British Library](https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.801036)
+Link: [ACM Digital Library](https://dl.acm.org/doi/10.5555/AAI28128363)
 
 ---
 
@@ -91,7 +90,7 @@ type safety of DIF, and demonstrate that the generic programming focused use
 cases for implicit functions in Scala are also expressible in DIF.
 </details>
 
-Link: [ACM](https://dl.acm.org/doi/pdf/10.1145/3337932.3338811)
+Link: [ACM Digital Library](https://dl.acm.org/doi/pdf/10.1145/3337932.3338811)
 
 ---
 
